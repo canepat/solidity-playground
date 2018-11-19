@@ -1,0 +1,26 @@
+target
+GTAGS
+GRTAGS
+GPATH
+prop
+out
+
+# OS X
+.DS_Store
+
+# eclipse
+.project
+.classpath
+.settings
+
+# intellij
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# build
+node_modules/

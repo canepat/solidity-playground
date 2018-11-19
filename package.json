@@ -1,0 +1,43 @@
+{
+    "name": "solidity-playground",
+    "version": "1.0.0",
+    "description": "Playground project for Solidity challenges",
+    "main": "truffle-config.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "coverage": "./node_modules/.bin/solidity-coverage",
+        "compile": "truffle compile",
+        "migrate": "truffle migrate",
+        "test": "truffle test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/canepat/solidity-playground.git"
+    },
+    "keywords": [
+        "Ethereum",
+        "Solidity",
+        "Smart",
+        "Contract"
+    ],
+    "author": "canepat",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://canepat/solidity-playground/issues"
+    },
+    "homepage": "https://github.com/canepat/solidity-playground#readme",
+    "dependencies": {
+        "bluebird": "3.5.1",
+        "bluebird-retry": "0.11.0",
+        "web3": "^0.20.6",
+        "openzeppelin-solidity": "^1.12.0"
+    },
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "chai-as-promised": "^7.1.1",
+        "chai-bignumber": "^2.0.2",
+        "solidity-coverage": "^0.5.11"
+    }
+}
