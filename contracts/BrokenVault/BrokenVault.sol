@@ -4,9 +4,9 @@ contract BrokenVault {
     bool public locked;
     bytes32 private password;
 
-    constructor(bytes32 _password) public {
+    constructor() public {
         locked = true;
-        password = _password;
+        password = "really_not_secret";
     }
 
     function unlock(bytes32 _password) public {

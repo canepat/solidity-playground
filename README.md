@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/canepat/solidity-playground.svg?branch=master)](https://travis-ci.com/canepat/solidity-playground)
+
 # Solidity Playground
 
 The source code for the Ethereum smart contracts animating my Solidity playground.
