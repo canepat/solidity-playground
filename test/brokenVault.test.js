@@ -79,7 +79,7 @@ contract("BrokenVault", function(accounts) {
             var locked = await vault.locked();
             assert.isTrue(locked, "vault locked state variable is false");
             locked = await web3.eth.getStorageAt(vault.address, 0);
-            assert.strictEqual(locked, "0x01", "vault locked state variable is false");
+            assert.strictEqual(parseInt(locked, 16), 1, "vault locked state variable is false");
 
             const password = await web3.eth.getStorageAt(vault.address, 1);
             await vault.unlock(web3.toAscii(password), { from: owner, gas: MAX_GAS });
@@ -87,7 +87,7 @@ contract("BrokenVault", function(accounts) {
             locked = await vault.locked();
             assert.isFalse(locked, "vault locked state variable is true");
             locked = await web3.eth.getStorageAt(vault.address, 0);
-            assert.strictEqual(locked, "0x00", "vault locked state variable is true");
+            assert.strictEqual(parseInt(locked, 16), 0, "vault locked state variable is true");
         });
     });
 });
